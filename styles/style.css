@@ -1,0 +1,120 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+	/* Font Family */
+    --FF: "Quicksand", sans-serif, system-ui;
+    --FS : clamp(1rem, 2.2vh, 1.5rem);
+
+    /* Colors */
+    --bg-color: #F7F7F7;
+    --border-color: #333;
+	--btn-color: orange;
+    --main-color: skyBlue;
+    --text-color: black;
+    --white-color: white;
+    --link-hover: hsla(0, 0%, 0%, 0.6);
+
+    /* Font Weights */
+
+    /* Borders */
+    --borders: 1px solid var(--border-color);
+
+    /* Radius */
+
+
+    /* Background Images */
+
+    /* Spacings- Google Mama says, In Most Browser 1 rem equal to 16 pixel */
+    --margin: clamp(1em, 2.5vh, 1.5em) 0;
+    --s-2: 2rem;
+	--s-10: 10px;
+	--s-12: 12px;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: var(--FF);
+    font-size: var(--FS);
+    background-color: var(--bg-color)
+}
+body{
+    box-sizing: border-box;
+    word-break: break-word;
+    text-rendering: optimizeLegibility;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    border-left: var(--borders);
+    border-right: var(--borders);
+    box-shadow: 0 0 10px var(--borders)
+}
+
+/* Common Styles */
+a:any-link{
+    text-decoration: none;
+    color: var(--text-color);
+}
+a:hover, a:focus-visible{
+    color: var(--link-hover);
+}
+a:active{
+    color: var(--btn-color);
+}
+li{
+    list-style-type: none;
+}
+h1, h2, h3{
+    letter-spacing: 0.1em;
+}
+p{
+    line-height: 1.5;
+}
+button{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.btn{
+    background-color: var(--btn-color);
+    color: var(--white-color);
+    padding: var(--s-10);
+    border-radius: var(--s-12);
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+input, button, textarea{
+    font: inherit;
+}
+.d-none{
+    display: none;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.text-center{
+    text-align: center;
+}
+.text-black{
+    color: var(--text-color);
+}
+.fs-32{
+    font-size: var(--s-2);
+}
+.fw-bold{
+    font-weight: bold;
+}
+
+/* Desktop Styles */
+
+
+/* Mobile Styles */
