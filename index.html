@@ -1,144 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kids Education</title>
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
 
     <!-- Style Sheet -->
-    <link rel="stylesheet" href=".style/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
 
     <!-- Font Awsome Linking -->
-     <script src="https://kit.fontawesome.com/ad9669ebf8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ad9669ebf8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <marquee behavior="" direction="">
+        📢 **Annual Sports Day:** Join us on <b>Saturday, February 10, 2025</b>, from <b>9:00 AM to 2:00 PM</b> at the
+        school
+        grounds! Don't forget to bring water bottles, caps, and sunscreen. Let's celebrate teamwork and sportsmanship!
+        🎉
+    </marquee>
     <!-- === Navbar Section === -->
-     <header id="header">
-        <a class="logo">
-            <img src="assets/logo.png" alt="school bag logo">
-            <h1>School</h1>
+    <header id="header" class="flex-container">
+        <a class="logo flex-container">
+            <img src="assets/logo.png" alt="school bag logo" height="62" width="62" />
+            <h1 class="fs-32 uppercase d-none-mobile">School</h1>
         </a>
-        <nav>
-            <ul>
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>About</li>
-                <li><a href=""></a>Facilities</li>
-                <li><a href=""></a>Admission</li>
+        <button class="mobile d-none">≡</button>
+        <nav class="d-none-mobile">
+            <ul class="header__nav flex-container fw-bold fs-20">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Facilities</a></li>
+                <li><a href="">Admission</a></li>
             </ul>
         </nav>
-        <button>Contact</button>
-     </header>
+        <button class="btn fs-20 fw-medium d-none-mobile">Contact</button>
+    </header>
 
-     <!-- === Banner Section === -->
-      <section id="banner">
-        <div class="banner_title">
+    <!-- === Banner Section === -->
+    <section id="banner" class="flex-container">
+        <div class="banner_title-container flex-col-container">
             <h2>
                 <span>Empowering</span>
                 <span>students from small age</span>
                 <span>towards vision</span>
             </h2>
-            <p>With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
-            <button>Enroll Now</button>
+            <p class="fs-20">
+                With the courage, Confidence, Creativity and Compassion to make their
+                Unique Contribution in a Diverse and Dynamic World.
+            </p>
+            <button class="btn fw-bold">Enroll Now</button>
         </div>
-        <img src="./assets/hero-kids.png" alt="boy of education power">
-      </section>
+        <img src="./assets/hero-kids.png" alt="boy of education power" />
+    </section>
 
-      <!-- === Classes Section === -->
-       <section id="classes">
+    <!-- === Classes Section === -->
+    <section id="curriculam" class="flex-col-container bg-img">
         <h3>Standard Curriculum</h3>
-        <div class="classes__card">
-            <img src="./assets/kinder.png" alt="breakfast">
-            <h4>Kinder (3-6) Years</h4>
-            <p>Cum sociis natoque penatibus et magnisdis parturient montes, nascetur ridiculusmu sdis parturient</p>
-            <a href="">Read More</a>
-        </div>
-        <div class="classes__card">
-            <img src="./assets/elementary.png" alt="books clock banana calender">
-            <h4>Elementary School</h4>
-            <p>Cum sociis natoque penatibus et magnisdis parturient montes, nascetur ridiculusmu sdis parturient</p>
-            <a href="">Read More</a>
-        </div>
-        <div class="classes__card">
-            <img src="./assets/middle.png" alt="sciece">
-            <h4>Middle (10-16) Years</h4>
-            <p>Cum sociis natoque penatibus et magnisdis parturient montes, nascetur ridiculusmu sdis parturient</p>
-            <a href="">Read More</a>
+
+        <div class="flex-container text-center curriculam__cards">
+            <div class="classes__card flex-col-container">
+                <img src="./assets/kinder.png" alt="breakfast" />
+                <h4>Kinder (3-6) Years</h4>
+                <p>
+                    Cum sociis natoque penatibus et magnisdis parturient montes,
+                    nascetur ridiculusmu sdis parturient
+                </p>
+                <a href="" class="fw-bold cur-link-1">Read More</a>
+            </div>
+            <div class="classes__card flex-col-container">
+                <img src="./assets/elementary.png" alt="books clock banana calender" />
+                <h4>Elementary School</h4>
+                <p>
+                    Cum sociis natoque penatibus et magnisdis parturient montes,
+                    nascetur ridiculusmu sdis parturient
+                </p>
+                <a href="" class="fw-bold cur-link-2">Read More</a>
+            </div>
+            <div class="classes__card flex-col-container">
+                <img src="./assets/middle.png" alt="sciece" />
+                <h4>Middle (10-16) Years</h4>
+                <p>
+                    Cum sociis natoque penatibus et magnisdis parturient montes,
+                    nascetur ridiculusmu sdis parturient
+                </p>
+                <a href="" class="fw-bold cur-link-3">Read More</a>
+            </div>
         </div>
 
-        <div class="classes__btn-group">
-            <button></button>
-            <button></button>
+        <div class="classes__btn-group d-none-mobile">
+            <button class="fw-bold">&lt;</button>
+            <button class="fw-bold">&gt;</button>
         </div>
-       </section>
+    </section>
 
-       <!-- === Our Stories Section === -->
-        <section id="our-stories">
-            <h3>Our Stories</h3>
-            <div class="our-stories__card">
-                <img src="./assets/story-1.png" alt="smiling siblings"><button></button>
+    <!-- === Our Stories Section === -->
+    <section id="our-stories" class="flex-col-container bg-img">
+        <h3>Our Stories</h3>
+
+        <div class="flex-container our-stories__card-container">
+            <div class="our-stories__card--big d-none-mobile">
+                <img src="./assets/story-1.png" alt="smiling siblings" />
                 <button>November 19, 2019</button>
-                <h4>A fun toddler coloring training on classroom</h4>
-                <p>Beautiful branding for changes by Never Now in Australia. changes is a platform for open discussion in an inclusive and collaborative environment, providing the...</p>
-            </div>
-           
-           <div class="our-stories__card">
-                <img src="./assets/story-1.png" alt="kids working"><button></button>
-                <button>November 19, 2019</button>
-                <h4>Find out if a school fits the family’s needs</h4>
-            </div>
-
-            <div class="our-stories__card">
-                <img src="./assets/story-1.png" alt="kids chilling"><button></button>
-                <button>November 19, 2019</button>
-                <h4>Summer math & literacy centres for kids</h4>
-            </div>
-
-            <div class="our-stories__card">
-                <img src="./assets/story-1.png" alt="kids in spiderman mask"><button></button>
-                <button>September 10, 2019</button>
-                <h4>Classroom management techniques for new tutors</h4>
-            </div>
-
-            <div class="our-stories__card">
-                <img src="./assets/story-1.png" alt="kids conversations"><button></button>
-                <button>July 19, 2019</button>
-                <h4>Conversation rhymes improve kids listening</h4>
-            </div>
-
-            <button>View All</button>
-        </section>
-
-        <footer>
-            <div>
-                <h4>Kids Education</h4>
-                <p>Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon Bianca pan bacon pineapple Aussie. Mayo rib sauce Hawaiian meatball.</p>
-            </div>
-
-            <div>
-                <h4>About School</h4>
-
-                <ul>
-                   <li><a href=""></a>Home</li>
-                    <li><a href=""></a>About</li>
-                    <li><a href=""></a>Facilities</li>
-                    <li><a href=""></a>Admission</li> 
-                </ul>
-            </div>
-
-            <div>
-                <h4>Keep In Touch</h4>
-                <div>
-                    <img src="./assets/fb.png" alt="facebook">
-                    <img src="./aassets/dribble.png" alt="dribble">
-                    <img src="./assets/twitter.png" alt="twitter">
-                    <img src="./assets/google+.png" alt="google+">
+                <div class="our-stories__card--content">
+                    <h4>A fun toddler coloring training on classroom</h4>
+                    <p>
+                        Beautiful branding for changes by Never Now in Australia. changes
+                        is a platform for open discussion in an inclusive and
+                        collaborative environment, providing the...
+                    </p>
                 </div>
             </div>
-        </footer>
+
+            <div class="flex-col-container our-stories__card--small-container">
+                <div class="flex-container our-stories__card--small">
+                    <div class="our-stories__card">
+                        <img src="./assets/story-2.png" alt="kids working" />
+                        <button>November 19, 2019</button>
+                        <h4>Find out if a school fits the family’s needs</h4>
+                    </div>
+
+                    <div class="our-stories__card">
+                        <img src="./assets/story-3.png" alt="kids chilling" />
+                        <button>November 19, 2019</button>
+                        <h4>Summer math & literacy centres for kids</h4>
+                    </div>
+                </div>
+
+                <div class="flex-container our-stories__card--small d-none mobile-flex">
+                    <div class="our-stories__card">
+                        <img src="./assets/story-3.png" alt="kids chilling" />
+                        <button>November 19, 2019</button>
+                        <h4>Summer math & literacy centres for kids</h4>
+                    </div>
+
+                    <div class="our-stories__card">
+                        <img src="./assets/story-3.png" alt="kids chilling" />
+                        <button>November 19, 2019</button>
+                        <h4>Summer math & literacy centres for kids</h4>
+                    </div>
+                </div>
+
+                <div class="flex-container our-stories__card--small">
+                    <div class="our-stories__card">
+                        <img src="./assets/story-4.png" alt="kids in spiderman mask" />
+                        <button>September 10, 2019</button>
+                        <h4>Classroom management techniques for new tutors</h4>
+                    </div>
+
+                    <div class="our-stories__card">
+                        <img src="./assets/story-5.png" alt="kids conversations" />
+                        <button>July 19, 2019</button>
+                        <h4>Conversation rhymes improve kids listening</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn black--btn fw-bold">View All</button>
+    </section>
+
+    <footer>
+        <div class="w-1-3">
+            <div class="footer__logo">
+                <img src="./assets/logo.png" alt="school bag logo">
+                <h4>Kids <br> Education</h4>
+            </div>
+            <p>
+                Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon
+                Bianca pan bacon pineapple Aussie. Mayo rib sauce Hawaiian meatball.
+            </p>
+        </div>
+
+        <div class="w-1-3">
+            <h4>About School</h4>
+            <p><a href="">Home</a></p>
+            <p><a href="">About</a></p>
+            <p><a href="">Facilities</a></p>
+            <p><a href="">Admission</a></p>
+        </div>
+
+        <div class="w-1-3">
+            <h4>Keep In Touch</h4>
+            <div class="social--icons flex-container">
+                <img src="./assets/fb.png" alt="facebook" />
+                <img src="./assets/dribble.png" alt="dribble" />
+                <img src="./assets/twitter.png" alt="twitter" />
+                <img src="./assets/google+.png" alt="google+" />
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
